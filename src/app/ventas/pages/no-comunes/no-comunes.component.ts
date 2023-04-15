@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { interval } from 'rxjs'
 @Component({
   selector: 'app-no-comunes',
   templateUrl: './no-comunes.component.html',
@@ -39,5 +39,7 @@ export class NoComunesComponent {
   eliminarCliente(){
     this.clientes.pop();
   }
+
+  myObservableTimer = interval(200);
 
 }
