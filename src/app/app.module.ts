@@ -7,7 +7,7 @@ import { AppRouterModule } from './app-router.module';
 import { VentasModule } from './ventas/ventas.module';
 import LocalEs from '@angular/common/locales/es-CO'
 import { registerLocaleData } from '@angular/common';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 registerLocaleData(LocalEs)
 
 @NgModule({
@@ -18,7 +18,8 @@ registerLocaleData(LocalEs)
     BrowserModule,
     SharedModule,
     AppRouterModule,
-    VentasModule
+    VentasModule,
+    BrowserAnimationsModule
   ],
   providers: [
     {
