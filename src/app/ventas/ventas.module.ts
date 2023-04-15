@@ -7,6 +7,7 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { OrderComponent } from './pages/order/order.component';
 import { ToggleCasePipe } from './pages/pipes/toggle-case.pipe';
 import { canFlyPipe } from './pages/pipes/can-fly.pipe';
+import { SortByPipe } from './pages/pipes/sort-by.pipe';
 
 
 
@@ -17,7 +18,8 @@ import { canFlyPipe } from './pages/pipes/can-fly.pipe';
     BasicosComponent,
     OrderComponent,
     ToggleCasePipe,
-    canFlyPipe
+    canFlyPipe,
+    SortByPipe
   ],
   imports: [
     CommonModule,
