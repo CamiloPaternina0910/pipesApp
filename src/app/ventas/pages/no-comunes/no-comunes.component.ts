@@ -10,6 +10,11 @@ export class NoComunesComponent {
 
   nombre : string  = 'Camilo'
   genero : 'Femenino' | 'Masculino' = 'Masculino'
+  persona = {
+    nombre: 'Camilo',
+    edad: 21,
+    pais: 'Colombia'
+  }
   clientes: string[] = [
     'Camilo',
     'Aury',
