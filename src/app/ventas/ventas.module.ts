@@ -3,8 +3,10 @@ import { CommonModule } from '@angular/common';
 import { NumerosComponent } from './pages/numeros/numeros.component';
 import { NoComunesComponent } from './pages/no-comunes/no-comunes.component';
 import { BasicosComponent } from './pages/basicos/basicos.component';
-import { OrdenarComponent } from './pages/ordenar/ordenar.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
+import { OrderComponent } from './pages/order/order.component';
+import { ToggleCasePipe } from './pages/pipes/toggle-case.pipe';
+import { canFlyPipe } from './pages/pipes/can-fly.pipe';
 
 
 
@@ -13,7 +15,9 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
     NumerosComponent,
     NoComunesComponent,
     BasicosComponent,
-    OrdenarComponent
+    OrderComponent,
+    ToggleCasePipe,
+    canFlyPipe
   ],
   imports: [
     CommonModule,
@@ -22,8 +26,7 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
   exports:[
     NumerosComponent,
     NoComunesComponent,
-    BasicosComponent,
-    OrdenarComponent
+    BasicosComponent
   ]
 })
 export class VentasModule { }
